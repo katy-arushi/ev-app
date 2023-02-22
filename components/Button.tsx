@@ -1,12 +1,16 @@
 import { Text, TouchableOpacity } from 'react-native';
 import { styles } from '../styles';
 
-const Button = (): JSX.Element => {
+type ButtonProps = {
+  message: string;
+  onPress: any;
+};
+
+export default function Button(props: ButtonProps): JSX.Element {
+
 	return (
-		<TouchableOpacity onPress={() => console.log("hello")} style={styles.button}>
-			<Text style={styles.buttonText}>Continue</Text>
+		<TouchableOpacity onPress={props.onPress} style={styles.button}>
+			<Text style={styles.buttonText}>{props.message}</Text>
 		</TouchableOpacity>
 	);
 };
-
-export default Button
