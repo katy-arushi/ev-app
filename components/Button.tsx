@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { Text, TouchableOpacity } from 'react-native';
 import { styles } from '../styles';
 
 const Button = (): JSX.Element => {
