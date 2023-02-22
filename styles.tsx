@@ -29,6 +29,7 @@ export const styles = StyleSheet.create({
     borderWidth: 2,
   },
   buttonText: {
+    textAlign: 'center',
     marginVertical: 10,
     borderColor: 'black',
     paddingHorizontal: 20,
