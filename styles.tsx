@@ -8,30 +8,35 @@ export const styles = StyleSheet.create({
 		justifyContent: 'center',
 	},
 	header: {
-    fontSize: 40,
+		fontSize: 40,
 		textAlign: 'center',
 		paddingBottom: 60,
 	},
-	text: {
-    fontSize: 18,
+	subHeader: {
+		fontSize: 25,
 		textAlign: 'center',
-    marginHorizontal: 30,
-  },
-  logoName: {
-    color: 'rgb(79, 250, 96)'
-  },
-  button: {
-    backgroundColor: 'rgb(79, 250, 96)',
-    borderRadius: 50,
-    alignItems: 'center',
-    marginTop: 90,
-    marginHorizontal: 10,
-    borderWidth: 2,
-  },
-  buttonText: {
-    textAlign: 'center',
-    marginVertical: 10,
-    borderColor: 'black',
-    paddingHorizontal: 20,
-  }
+		paddingBottom: 40,
+	},
+	text: {
+		fontSize: 18,
+		textAlign: 'center',
+		marginHorizontal: 30,
+	},
+	logoName: {
+		color: 'rgb(79, 250, 96)',
+	},
+	button: {
+		backgroundColor: 'rgb(79, 250, 96)',
+		borderRadius: 50,
+		alignItems: 'center',
+		marginTop: 90,
+		marginHorizontal: 10,
+		borderWidth: 2,
+	},
+	buttonText: {
+		textAlign: 'center',
+		marginVertical: 10,
+		borderColor: 'black',
+		paddingHorizontal: 20,
+	},
 });
