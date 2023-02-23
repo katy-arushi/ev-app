@@ -1,11 +1,11 @@
-import { View, Text } from 'react-native';
+import { Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import Button from '../components/Button';
 
 import { styles } from '../styles';
 
-const WelcomeScreen = (): JSX.Element => {
+export default function WelcomeScreen({ navigation }): JSX.Element {
 	return (
 		<SafeAreaView style={styles.homeContainer}>
 			<Text style={styles.header}>
@@ -14,9 +14,10 @@ const WelcomeScreen = (): JSX.Element => {
 			<Text style={styles.text}>
 				Press continue to find an electric vehicle charger near you
 			</Text>
-			<Button />
+			<Button
+				message='Continue'
+				onPress={navigation.navigate('ChargingScreen')}
+			/>
 		</SafeAreaView>
 	);
-};
-
-export default WelcomeScreen;
+}
