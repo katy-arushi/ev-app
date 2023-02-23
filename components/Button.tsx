@@ -2,7 +2,7 @@ import { Text, TouchableOpacity } from 'react-native';
 import { styles } from '../styles';
 
 type ButtonProps = {
-  message: string;
+  message: String;
   onPress: any;
 };
 
