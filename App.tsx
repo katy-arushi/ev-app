@@ -1,21 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { styles } from './styles';
-
 import WelcomeScreen from './screens/WelcomeScreen';
+import ChargingScreen from './screens/ChargingScreen';
 
 export default function App(): JSX.Element {
+
 	const Stack = createNativeStackNavigator();
 
 	return (
 		<NavigationContainer>
-			<View style={styles.homeContainer}>
-				<WelcomeScreen />
-				<StatusBar style='auto' />
-			</View>
+			<StatusBar style='auto' />
+			<Stack.Navigator initialRouteName='ChargingScreen'>
+				{/* <Stack.Screen name='WelcomeScreen' component={WelcomeScreen} /> */}
+				<Stack.Screen name='ChargingScreen' component={ChargingScreen} />
+			</Stack.Navigator>
 		</NavigationContainer>
 	);
 }
